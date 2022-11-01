@@ -278,29 +278,6 @@ def find_player_last_5_punctuations_and_its_average(url):
   return last_5_punctuations, ("%.1f"%avg)
 
 
-
-
-# sample_url='https://www.comuniate.com/jugadores/2039/aleix-garcia'
-# sample_url2='https://www.comuniate.com/jugadores/1400/courtois'
-# sample_url3='https://www.comuniate.com/jugadores/3300/lewandowski'
-# sample_url4='https://www.comuniate.com/jugadores/2743/catena'
-# sample_url5='https://www.comuniate.com/jugadores/52/diego-lopez'
-# sample_url6='https://www.comuniate.com/jugadores/1915/rulli'
-# sample_url7='https://www.comuniate.com/jugadores/1523/iago-aspas'
-# sample_url8='https://www.comuniate.com/jugadores/1341/joselu'
-# sample_url9='https://www.comuniate.com/jugadores/3335/pep-chavarria'
-
-
-# urls=[]
-# urls.append(all_players_list[0])
-# urls.append(all_players_list[1])
-# urls.append(all_players_list[2])
-# urls.append(all_players_list[3])
-# urls.append(all_players_list[4])
-# urls.append(all_players_list[5])
-# urls.append(all_players_list[6])
-
-
 header = ['Id', 'Name', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_%', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Points_last_5_games', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']
 
 f = open('data/players_data_November_01.csv', 'a+')
@@ -309,16 +286,15 @@ writer.writerow(header)
 
 for u in all_players_list:
 
-  file_sample_url=u
-  id = find_player_id(file_sample_url)
-  name = find_player_name(file_sample_url)
-  position, ranking_position = find_player_position_and_positionrank(file_sample_url)
-  matches_played, matches_played_percent = find_player_matches_played_and_percentage_season_starting_eleven(file_sample_url)
-  usually_starting = find_player_currently_starting_eleven(file_sample_url)
-  assists, goals_or_saved_penalties, penalty_goals_or_clean_sheets, yellow_cards, red_cards = find_player_asists_goalsORsavedpenalties_penaltygoalsORcleansheets_yellowcards_redcards(file_sample_url)
-  points, avg_points = find_player_points_and_points_average(file_sample_url)
-  points_last_5_games, avg_las_5_games = find_player_last_5_punctuations_and_its_average(file_sample_url)
-  current_price, max_price, min_price = find_player_price_actual_max_min(file_sample_url)
+  id = find_player_id(u)
+  name = find_player_name(u)
+  position, ranking_position = find_player_position_and_positionrank(u)
+  matches_played, matches_played_percent = find_player_matches_played_and_percentage_season_starting_eleven(u)
+  usually_starting = find_player_currently_starting_eleven(u)
+  assists, goals_or_saved_penalties, penalty_goals_or_clean_sheets, yellow_cards, red_cards = find_player_asists_goalsORsavedpenalties_penaltygoalsORcleansheets_yellowcards_redcards(u)
+  points, avg_points = find_player_points_and_points_average(u)
+  points_last_5_games, avg_las_5_games = find_player_last_5_punctuations_and_its_average(u)
+  current_price, max_price, min_price = find_player_price_actual_max_min(u)
 
   data = [id, name, position, ranking_position, matches_played, matches_played_percent, usually_starting, goals_or_saved_penalties, penalty_goals_or_clean_sheets, assists, yellow_cards, red_cards, points, avg_points, points_last_5_games, avg_las_5_games, current_price, max_price, min_price]
 
