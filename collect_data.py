@@ -277,13 +277,10 @@ def find_player_last_5_punctuations_and_its_average(url):
 
   return last_5_punctuations, ("%.1f"%avg)
 
-# url_s='https://www.comuniate.com/jugadores/1341/joselu'
-# print(find_player_last_5_punctuations_and_its_average(url_s))
-
 
 header = ['Id', 'Name', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_%', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Points_last_5_games', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']
 
-f = open('data/players_data_November_03.csv', 'a+')
+f = open('data/players_data_November_04.csv', 'a+')
 writer = csv.writer(f)
 writer.writerow(header)
 
