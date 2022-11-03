@@ -1,6 +1,6 @@
 import csv
 
-def cook_soup_from_url(url, parser='lxml', sleep_time=0, timeout=10):
+def cook_soup_from_url(url, parser='lxml', sleep_time=0, timeout=50):
   """Uses requests to retreive webpage and returns a BeautifulSoup made using lxml parser."""
   import requests
   from time import sleep
@@ -71,9 +71,12 @@ all_players_list = all_players_list[4:]
 # FUNCTION WHICH OBTAINS THE PLAYER ID (FROM THE URL)
 def find_player_id(url):
   divided_url = url.split('/')
+ 
   for sub in divided_url:
     if sub.isdigit():
       id = sub
+    else:
+      id=-1
   return id
 
 
@@ -263,24 +266,24 @@ def find_player_last_5_punctuations_and_its_average(url):
       last_5_punctuations.append(punt)
 
   rend=[]
-  cont=0
 
   for av in last_5_punctuations:
     if av != '-':
       rend.append(int(av))
-      cont+=1
+    else:
+      rend.append(0)
 
-  if cont!=0:
-    avg = sum(rend)/cont
-  else:
-    avg=0
+  avg = sum(rend)/5
 
   return last_5_punctuations, ("%.1f"%avg)
+
+# url_s='https://www.comuniate.com/jugadores/1341/joselu'
+# print(find_player_last_5_punctuations_and_its_average(url_s))
 
 
 header = ['Id', 'Name', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_%', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Points_last_5_games', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']
 
-f = open('data/players_data_November_01.csv', 'a+')
+f = open('data/players_data_November_03.csv', 'a+')
 writer = csv.writer(f)
 writer.writerow(header)
 
