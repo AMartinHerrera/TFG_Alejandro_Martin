@@ -77,6 +77,7 @@ def find_player_id(url):
       id = sub
     else:
       id=-1
+      raise ValueError ("ERROR! The id can not be negative")
   return id
 
 
@@ -280,7 +281,7 @@ def find_player_last_5_punctuations_and_its_average(url):
 
 header = ['Id', 'Name', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_%', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Points_last_5_games', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']
 
-f = open('data/players_data_November_04.csv', 'a+')
+f = open('data/players_data_November_08.csv', 'a+')
 writer = csv.writer(f)
 writer.writerow(header)
 
@@ -297,6 +298,7 @@ for u in all_players_list:
   current_price, max_price, min_price = find_player_price_actual_max_min(u)
 
   data = [id, name, position, ranking_position, matches_played, matches_played_percent, usually_starting, goals_or_saved_penalties, penalty_goals_or_clean_sheets, assists, yellow_cards, red_cards, points, avg_points, points_last_5_games, avg_las_5_games, current_price, max_price, min_price]
+  # data = [id, name, position, ranking_position, matches_played, matches_played_percent, usually_starting, goals_or_saved_penalties, penalty_goals_or_clean_sheets, assists, yellow_cards, red_cards, points, avg_points, current_price, max_price, min_price]
 
   writer.writerow(data)
 
