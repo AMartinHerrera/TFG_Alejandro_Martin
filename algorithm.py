@@ -19,13 +19,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.feature_extraction import DictVectorizer
 
 
-
-# Duda sobre points_last_5_games en numerical_attributes (es una lista)
-
-categorical_attributes = ['Name', 'Position', 'Usually_starting']
-numerical_attributes = ['Id', 'Ranking_position', 'Matches_played', 'Matches_played_percentage', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Points_last_5_games', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']
-
-input_file = "data/players_data_November_03_OK.csv"
+input_file = "data/players_data_November_18_OK.csv"
 
 # comma delimited is the default
 all_data = pd.read_csv(input_file, header = 0)
@@ -40,46 +34,29 @@ all_data = pd.read_csv(input_file, header = 0)
 # create a numpy array with the numeric values for input into scikit-learn
 numpy_array = all_data.as_matrix()
 
-print(numpy_array[0])
-print('---------------------------------------')
-# print(all_data.describe)
-print('---------------------------------------')
 
-# print(all_data.iloc[:, 1])
+x_train = all_data[['Id', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_percentage', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Current_price', 'Max_price', 'Min_price', 'Average_points_last_5_games', 'J_minus4', 'J_minus3', 'J_minus2']].values
+y_train = all_data['J_minus1'].values
 
-last5 = all_data['Points_last_5_games']
+x_test = all_data[['Id', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_percentage', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Current_price', 'Max_price', 'Min_price', 'Average_points_last_5_games', 'J_minus3', 'J_minus2', 'J_minus1']].values
+y_test = all_data['J_actual'].values
 
-
-# OJO! SIN POINTS Y SIN LAST 5 PUNTUACIONES 
-x = all_data[['Id', 'Ranking_position', 'Matches_played', 'Matches_played_percentage', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Average_points', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']].values
-# print(x)
-
-y = all_data['Points'].values
-
-# df1 = all_data.loc[:, all_data.columns != 'Id' and all_data.columns != 'Name']
-
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.001, random_state=0)
-
-
-print('XTRAINN')
-# print(X_train)
-print('---------------------------------------')
-print('yTESSTTT')
-# print(y_test)
-print('---------------------------------------')
 
 regressor = LinearRegression() 
-regressor.fit(X_train, y_train) #Entrena el algoritmo
+regressor.fit(x_train, y_train) #Entrena el algoritmo
 
+print('---------------------------------------')
 #Para obtener el intercepto:
 print(regressor.intercept_)
+
+print('---------------------------------------')
 #Para obtener la pendiente
 print(regressor.coef_)
 
-y_pred = regressor.predict(X_test)
+y_pred = regressor.predict(x_test)
 
 df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
-print('RESSSS---------')
+print('RESULT---------')
 print(df)
 
 # plt.figure(figsize=(15,10))
