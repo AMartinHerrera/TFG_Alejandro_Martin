@@ -67,7 +67,6 @@ for url_team in teams_squad_links:
 all_players_list = list(dict.fromkeys(all_players_list_with_duplicates))
 all_players_list = all_players_list[4:]
 
-
 # FUNCTION WHICH OBTAINS THE PLAYER ID (FROM THE URL)
 def find_player_id(url):
   divided_url = url.split('/')
@@ -75,9 +74,11 @@ def find_player_id(url):
   for sub in divided_url:
     if sub.isdigit():
       id = sub
+      return id
     else:
-      id=-1
-      raise ValueError ("ERROR! The id can not be negative")
+      pass
+      # id=-1
+      # raise ValueError ("ERROR! The id can not be negative")
   return id
 
 
@@ -101,7 +102,7 @@ def find_player_name(url):
   return name.text.strip()
 
 
-# FUNCTION WHICH OBTAINS THE PLAYER POSITION AND THE RANK OUT OF POSITION
+# FUNCTION WHICH OBTAINS THE PLAYER POSITION AND THE RANK OUT OF POSITION (PT=0, DF=1, MF=2, DL=3)
 def find_player_position_and_positionrank(url):
   soup = cook_soup_from_url(url)
   all_div_position = soup.findAll("div", "col-xs-6") 
@@ -116,6 +117,17 @@ def find_player_position_and_positionrank(url):
   position = res[0]
   position = position[-2:]
 
+  if position == 'PT':
+    numeric_pos=0
+  elif position == 'DF':
+    numeric_pos=1
+  elif position == 'MD':
+    numeric_pos=2
+  elif position == 'DL':
+    numeric_pos=3
+  else:  # ERROR
+    numeric_pos=-100
+
   subs = 'RANK'    
   res = [i for i in info_list_unfiltered if subs in i]
   resAux = res[0]
@@ -127,10 +139,10 @@ def find_player_position_and_positionrank(url):
   rank = rank.replace('RANK.', '')
   rank = rank.replace('º', '')
 
-  return position, rank
+  return numeric_pos, rank
 
 
-# FUNCTION WHICH OBTAINS THE PLAYER BOOLEAN OF STARTING ELEVEN
+# FUNCTION WHICH OBTAINS THE PLAYER BOOLEAN OF STARTING ELEVEN (1=True, 0=False)
 def find_player_currently_starting_eleven(url):
   soup = cook_soup_from_url(url)
   all_div_starting_eleven = soup.findAll("div", "col-xs-6") 
@@ -149,9 +161,9 @@ def find_player_currently_starting_eleven(url):
   yesno_info = yesno_info.replace('¿Titular?', '')
 
   if yesno_info == "SI":
-    return True
+    return 1
   else:
-    return False
+    return 0
 
 
 # FUNCTION WHICH OBTAINS THE PLAYER ASISTS GOALS/SAVED PENALTIES PENALTYGOALS/CLEAN SHEETS YELLOW CARDS AND RED CARDS
@@ -236,7 +248,7 @@ def send_post_request(url, json_data):
   return x.text
 
 
-# FUNCTION WHICH OBTAINS THE PLAYER 5 LAST PUNTUATIONS AND ITS AVERAGE
+# FUNCTION WHICH OBTAINS THE PLAYER 5 LAST PUNTUATIONS AND ITS AVERAGE (NO PUNCTUATION = -50)
 def find_player_last_5_punctuations_and_its_average(url):
   post_url_last_punctuations="https://www.comuniate.com/ajax/estadistica_carga_puntos.php"
   post_id_player=find_player_id(url)
@@ -259,7 +271,7 @@ def find_player_last_5_punctuations_and_its_average(url):
     k=list_def[x].pop(6)
     rastreator = k.find('class="puntos')
     if rastreator == -1:
-      last_5_punctuations.append('-')
+      last_5_punctuations.append('-50')
     else:
       puncAux = k.split('>')
       puncAux.append("")
@@ -269,19 +281,19 @@ def find_player_last_5_punctuations_and_its_average(url):
   rend=[]
 
   for av in last_5_punctuations:
-    if av != '-':
+    if av != '-50':
       rend.append(int(av))
     else:
       rend.append(0)
 
   avg = sum(rend)/5
 
-  return last_5_punctuations, ("%.1f"%avg)
+  return last_5_punctuations[0], last_5_punctuations[1], last_5_punctuations[2], last_5_punctuations[3], last_5_punctuations[4], ("%.1f"%avg)
 
 
-header = ['Id', 'Name', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_%', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Points_last_5_games', 'Average_points_last_5_games', 'Current_price', 'Max_price', 'Min_price']
+header = ['Id', 'Name', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_percentage', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Current_price', 'Max_price', 'Min_price', 'Average_points_last_5_games', 'J_minus4', 'J_minus3', 'J_minus2', 'J_minus1', 'J_actual']
 
-f = open('data/players_data_November_08.csv', 'a+')
+f = open('data/players_data_November_18_OK.csv', 'a+')
 writer = csv.writer(f)
 writer.writerow(header)
 
@@ -294,11 +306,10 @@ for u in all_players_list:
   usually_starting = find_player_currently_starting_eleven(u)
   assists, goals_or_saved_penalties, penalty_goals_or_clean_sheets, yellow_cards, red_cards = find_player_asists_goalsORsavedpenalties_penaltygoalsORcleansheets_yellowcards_redcards(u)
   points, avg_points = find_player_points_and_points_average(u)
-  points_last_5_games, avg_las_5_games = find_player_last_5_punctuations_and_its_average(u)
+  j_actual, j_minus1, j_minus2, j_minus3, j_minus4, avg_las_5_games = find_player_last_5_punctuations_and_its_average(u)
   current_price, max_price, min_price = find_player_price_actual_max_min(u)
 
-  data = [id, name, position, ranking_position, matches_played, matches_played_percent, usually_starting, goals_or_saved_penalties, penalty_goals_or_clean_sheets, assists, yellow_cards, red_cards, points, avg_points, points_last_5_games, avg_las_5_games, current_price, max_price, min_price]
-  # data = [id, name, position, ranking_position, matches_played, matches_played_percent, usually_starting, goals_or_saved_penalties, penalty_goals_or_clean_sheets, assists, yellow_cards, red_cards, points, avg_points, current_price, max_price, min_price]
+  data = [id, name, position, ranking_position, matches_played, matches_played_percent, usually_starting, goals_or_saved_penalties, penalty_goals_or_clean_sheets, assists, yellow_cards, red_cards, points, avg_points, current_price, max_price, min_price, avg_las_5_games, j_minus4, j_minus3, j_minus2, j_minus1, j_actual]
 
   writer.writerow(data)
 
