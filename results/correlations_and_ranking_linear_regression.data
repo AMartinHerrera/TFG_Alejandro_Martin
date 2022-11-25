@@ -1,0 +1,544 @@
+Pearson correlation coefficient is --> 0.7164
+Spearman correlation coefficient is --> 0.7219
+Kendall correlation coefficient is --> 0.5537
+
+PLAYERS RANKING (AND ITS SCORE) ACCORDING TO LINEAR REGRESSION: 
+Ezequiel Ávila: 36
+Álvaro García: 31
+Griezmann: 27
+Muriqi: 24
+Aleñá: 23
+Moi Gómez: 23
+Rajkovic: 21
+David García Zub.: 21
+Éder Militão: 21
+Enes Ünal: 18
+Lejeune: 18
+David Soria: 17
+Dembélé: 16
+Álvaro Aguado: 16
+Pedri: 15
+De Jong: 15
+Aidoo: 15
+Fernando Martínez: 14
+David López: 14
+Fran García: 14
+Sergio Camello: 14
+Leo Baptistão: 13
+Borja Mayoral: 13
+Parejo: 13
+Ferrán Torres: 12
+Fede Valverde: 12
+Samuel Lino: 12
+Williams: 11
+Raúl García: 11
+Mitrovic: 11
+Dani Rodríguez: 11
+Dimitrievski: 11
+Joaquín Fernández: 11
+Sergio León: 11
+Gudelj: 11
+Robertone: 10
+Omar Mascarell: 10
+Lecomte: 10
+Brian Oliván: 10
+Balliu: 10
+Bono: 10
+Jordi Alba: 9
+Vinicius Souza: 9
+Djené: 9
+Valentín Castellanos: 9
+Roque Mesa: 9
+Álex Telles: 9
+Erik Lamela: 9
+Javi Puado: 8
+Copete: 8
+Óscar Plano: 8
+Pezzella: 7
+Álex Fernández: 7
+Óscar Rodríguez: 7
+Santiago Bueno: 7
+Asensio: 7
+Mikel Merino: 7
+Javi Sánchez: 7
+Guido Rodríguez: 6
+Aitor Ruibal: 6
+Lucas Pérez: 6
+Josan: 6
+Aleix García: 6
+Unai García: 6
+Nacho Vidal: 6
+Brais Méndez: 6
+Sergio Busquets: 5
+Fede San Emeterio: 5
+Javi Galán: 5
+Franco Cervi: 5
+Pere Milla: 5
+Sergi Gómez: 5
+Luis Milla: 5
+Antonio Sánchez: 5
+Lucas Torró: 5
+Comesaña: 5
+Le Normand: 5
+Thierry Correia: 5
+Witsel: 4
+João Félix: 4
+Gavi: 4
+Jeremías Ledesma: 4
+Iago Aspas: 4
+Juan Iglesias: 4
+Jaume Costa: 4
+Jon Moncayola: 4
+Budimir: 4
+Óscar Valentín: 4
+Camavinga: 4
+Vinícius Júnior: 4
+Gayà: 4
+Akieme: 3
+Espino: 3
+Maksimovic: 3
+Martin Valjent: 3
+Catena: 3
+Isi Palazón: 3
+Modric: 3
+Mamardashvili: 3
+Guillamón: 3
+Unai Simón: 2
+Bigas: 2
+Jesús Navas: 2
+Unai Núñez: 1
+Mingueza: 1
+Édgar Badía: 1
+Gumbau: 1
+Masip: 1
+Babic: 0
+Alejandro Balde: 0
+Sobrino: 0
+Choco Lozano: 0
+Marchesin: 0
+Carles Pérez: 0
+Ruiz de Galarreta: 0
+Rodrigo Battaglia: 0
+Manu Sánchez: 0
+Pathé Ciss: 0
+Sancet: -1
+Bongonda: -1
+Fran Beltrán: -1
+Raúl Guti: -1
+Sergi Darder: -1
+Lucas Olaza: -1
+Cömert: -1
+Kluivert: -1
+Albiol: -1
+Nahuel Molina: -2
+Marcos Alonso: -2
+Óscar Gil: -2
+Eguaras: -3
+Guruzeta: -3
+Reinildo Mandava: -3
+Ansu Fati: -3
+Álex Moreno: -3
+Aimar Oroz: -3
+Falcao: -3
+Kroos: -3
+Gorosabel: -3
+Diego Rico: -3
+Rafa Mir: -3
+André Almeida: -3
+Savic: -4
+Rodrigo de Paul: -4
+Keidi Bare: -4
+Oriol Romeu: -4
+Yangel Herrera: -4
+Raíllo: -4
+Alex Remiro: -4
+Nico González: -4
+Marcos André: -4
+Yéremi Pino: -4
+Rodrigo Ely: -5
+Kondogbia: -5
+Correa: -5
+Ter Stegen: -5
+Enzo Roco: -5
+Calero: -5
+Munir El Haddadi: -5
+Idrissu Baba: -5
+Kike Pérez: -5
+Rulli: -5
+Iván Alejo: -6
+Alaba: -6
+Tchouaméni: -6
+Álex Pozo: -7
+Ramazani: -7
+Ferreira Carrasco: -7
+Morata: -7
+Arnau Martínez: -7
+Valery: -7
+Toni Villa: -7
+Kang-In Lee: -7
+De la Hoz: -8
+Brian Ocampo: -8
+Gonzalo Paciencia: -8
+Lucas Boyé: -8
+Braithwaite: -8
+Domingos Duarte: -8
+Javi Hernández: -8
+Trejo: -8
+Unai López: -8
+Ferland Mendy: -8
+Jon Pacheco: -8
+Zubimendi: -8
+Shon Weissman: -8
+Isco: -8
+Lekue: -9
+Mikel Vesga: -9
+Saúl Ñíguez: -9
+Luiz Henrique: -9
+Juan Cruz: -9
+Strand Larsen: -9
+Gonzalo Plata: -9
+Joan Jordan: -9
+En-Nesyri: -9
+Yunus Musah: -9
+Kiko Femenía: -9
+Kaiky: -10
+Francisco Portillo: -10
+William Carvalho: -10
+Fali: -10
+Pol Lirola: -10
+Álex Collado: -10
+Ezequiel Ponce: -10
+Rüdiger: -10
+Zubeldia: -10
+Sorloth: -10
+Iván Sánchez: -10
+Sergi Guardiola: -10
+Papu Gómez: -10
+Samu Chukwueze: -10
+Embarba: -11
+Lewandowski: -11
+Raphinha: -11
+Guardado: -11
+Fernández Mercau: -11
+Tete Morente: -11
+Stuani: -11
+Abdón Prats: -11
+Rubén García: -11
+Kike García: -11
+Lucas Vázquez: -11
+Jawad El Yamiq: -11
+Monchu: -11
+Foulquier: -11
+Álex Baena: -11
+Nicolas Jackson: -11
+Samu Costa: -12
+Dyego Sousa: -12
+Daniel Vivian: -12
+Iñigo Martínez: -12
+Matheus Cunha: -12
+Angileri: -12
+Miguel Gutiérrez: -12
+Silva: -12
+Pau Torres: -12
+Melero: -13
+Yeray Álvarez: -13
+Sergi Roberto: -13
+Gabriel Veiga: -13
+Renato Tapia: -13
+Clerc: -13
+Lazo: -13
+Amath Ndiaye: -13
+Kike Barja: -13
+Carvajal: -13
+Lucas Rosa: -13
+Danjuma: -13
+El Bilal Touré: -14
+José Giménez: -14
+Édgar González: -14
+Rubén Alcaraz: -14
+Hugo Mallo: -14
+Aleix Vidal: -14
+Portu: -14
+Rodrigo Riquelme: -14
+Aitor Fernández: -14
+Óliver Torres: -14
+Gabriel Paulista: -14
+Capoue: -14
+Arnau Puigmal: -15
+De Marcos: -15
+Nico Williams: -15
+Oblak: -15
+Gonzalo Verdú: -15
+Joselu: -15
+Grenier: -15
+Brasanac: -15
+Cavani: -15
+Hugo Duro: -15
+Alberto Moreno: -15
+Coquelin: -15
+Morales: -15
+Lemar: -16
+Sabaly: -16
+Zaldua: -16
+Domingos Quina: -16
+Salvi: -16
+Illarramendi: -16
+Sergio Escudero: -16
+Marcos Acuña: -16
+Rakitic: -16
+Zarraga: -17
+Rodrigo Sánchez: -17
+Leandro Cabrera: -17
+Gazzaniga: -17
+Maffeo: -17
+Giovanni González: -17
+Rubén Peña: -17
+Canales: -18
+Willian José: -18
+Luis Hernández: -18
+José Mari: -18
+Edu Expósito: -18
+Nico Melamed: -18
+Nastasic: -18
+Courtois: -18
+Kubo: -18
+Iván Martín: -19
+Carlos Fernández: -19
+Delaney: -19
+Samu Castillejo: -19
+Muniain: -20
+Fekir: -20
+Víctor Chust: -20
+Juan Carlos Martín: -20
+Rodrygo: -20
+Robert Navarro: -20
+Guevara: -20
+Trigueros: -20
+Chumi: -21
+Ander Herrera: -21
+Rui Silva: -21
+Helibelton Palacios: -21
+Algobia: -21
+Latasa: -21
+Álex Berenguer: -22
+Iza Carcelén: -22
+Yan Couto: -22
+Johan Mojica: -22
+Aritz Elustondo: -23
+Aihen Muñoz: -23
+Marcos Llorente: -24
+Negredo: -24
+Roger: -24
+Rekik: -24
+Özkacar: -24
+Unai Vencedor: -25
+Koke: -25
+Diego González: -25
+Jaime Seoane: -25
+Benzema: -25
+Zouhair Feddal: -25
+Nianzou: -25
+Mendes: -26
+Jon Morcillo: -26
+Kessié: -26
+Ramón Terrats: -26
+Sergio Herrera: -26
+Ilaix Moriba: -26
+Lázaro Vinicius: -27
+Yuri Berchiche: -27
+Claudio Bravo: -27
+Omar El Hilali: -27
+Abde Ezzalzouli: -27
+Nacho Fernández: -27
+Eric García: -28
+Dani Gómez: -28
+Gonzalo Montiel: -28
+Diakhaby: -28
+Dani García: -29
+Paul Akouokou: -29
+Bernardo: -29
+Aïssa Mandi: -29
+Damián Suárez: -30
+Kounde: -31
+Juanpe: -31
+Kike Salas: -31
+Christensen: -32
+Luiz Felipe: -32
+Jaime Mata: -32
+Pozo: -32
+Randy Nteka: -32
+Beñat Turrientes: -32
+Iván Fresneda: -32
+José Ángel Carmona: -32
+Alfonso Pedraza: -32
+Gerard Moreno: -32
+Cala: -33
+Arzamendia: -33
+Fidel: -33
+Pol Lozano: -33
+Pep Chavarría: -33
+Lunin: -33
+Dani Ceballos: -33
+Joaquín: -34
+Augusto Solari: -34
+Narvaez: -34
+Villalibre: -35
+Ronald Araujo: -35
+Víctor Ruiz: -35
+Momo Mbaye: -35
+Luca de la Torre: -35
+Simo: -35
+Reinier: -35
+Samu Sáiz: -35
+Mariano Díaz: -35
+Sergio Asenjo: -35
+Mickael Malsa: -35
+Morlanes: -35
+Ivo Grbic: -36
+Borja Iglesias: -36
+Pablo Durán: -36
+John Donald: -36
+Manu Vallejo: -36
+Pablo Marín: -36
+Karrikaburu: -36
+Fernando Reges: -36
+Juan Foyth: -36
+Felipe: -37
+Pablo Ibáñez: -37
+Álex Sola: -37
+Luis Pérez: -37
+Dolberg: -37
+Lato: -37
+Awer Mabil: -38
+Tomás Alarcón: -38
+Omar Alderete: -38
+Ángel Rodríguez: -38
+Abdul Mumin: -38
+Bebé: -38
+Ali Cho: -38
+Lago Júnior: -39
+Ander Barrenetxea: -39
+Jon Magunazelaia: -39
+Marcão: -39
+Jorge Cuenca: -39
+Álvaro Fernández: -40
+Mauro Arambarri: -40
+Suso: -40
+Jesús Vázquez: -40
+Lo Celso: -40
+Reguilón: -41
+Héctor Bellerín: -41
+Eden Hazard: -41
+Antonio Blanco: -42
+Kevin Vázquez: -42
+Swedberg: -42
+Amavi: -42
+Óscar Ureña: -42
+Franco Russo: -42
+Milovanovic: -43
+Rubén Sánchez Sáez: -43
+Aridane Hernández: -43
+Umar Sadiq: -43
+Juan Miranda: -44
+Juanmi Jiménez: -44
+Mamady Diarra: -44
+Luca Koleosho: -44
+Braian Cufré: -44
+Dmitrovic: -44
+Balenziaga: -45
+Mario Hermoso: -45
+Loren Morón: -45
+Gastón Álvarez: -45
+Cristhian Mosquera: -45
+Pacheco: -46
+Martín Montoya: -46
+Januzaj: -46
+Pastore: -47
+Nabil Touaizi: -47
+Pablo Muñoz: -47
+Anuar: -47
+Roberto Arroyo: -47
+Diego López Noguerol: -47
+Aitor Paredes: -48
+Álvaro Giménez: -48
+Javi Llabres: -48
+Diego López: -48
+Kenedy: -48
+Jesús Corona: -48
+Raúl de Tomás: -49
+Juanjo Nieto: -50
+Iván Martos: -50
+Álex Centelles: -50
+Gui Guedes: -50
+Agirrezabala: -50
+Ander Iru: -50
+Malcom Adu: -50
+Pablo Barrios: -50
+Iñaki Peña: -50
+Pablo Torre: -50
+Álvaro Sanz: -50
+Estanis: -50
+Dani Martín: -50
+David Gil: -50
+Iván Chapela: -50
+Carlos Domínguez: -50
+Hugo Álvarez: -50
+Federico Fernández: -50
+Álex Alfaro: -50
+Joan García: -50
+Lluís Recasens: -50
+Villahermosa: -50
+Diego Conde: -50
+Kofi: -50
+Moi Parra: -50
+Toni Fuidias: -50
+Joel Roca: -50
+Ibrahima Kébé: -50
+Greif: -50
+Leo Román: -50
+Josep Gayá: -50
+Kadewere: -50
+Juan Pérez: -50
+Unai Dufur: -50
+Barbero: -50
+Miguel Morro: -50
+Mario Suárez: -50
+Mario Hernández: -50
+Álvaro Aguirre: -50
+Andrés Martín: -50
+Peter González: -50
+Andoni Zubiaurre: -50
+Ander Martín: -50
+Rubén Iranzo: -50
+Fran Pérez: -50
+Jesús Santiago: -50
+Pepe Reina: -50
+Alberto del Moral: -50
+Carlo Adriano: -50
+Svidersky: -51
+Capa: -51
+Carlos Martín: -51
+Ilias Akhomach: -51
+Fran Delgado: -51
+Álvaro Bastida: -51
+Jon Ander Garrido: -51
+Iván Villar: -51
+Axel Werner: -51
+Adrià Pedrosa: -51
+Gori: -51
+Roberto Torres: -51
+Iker Benito: -51
+Odriozola: -51
+Jesús Vallejo: -51
+Merquelanz: -51
+Pedro Ortiz: -51
+Jaume Doménech: -51
+Herrerín: -51
+Camarasa: -52
+Denis Suárez: -52
+Borja García: -52
+Oyarzabal: -52
+Fernando Niño: -52
+Depay: -53
+Kiko Casilla: -53
+Saveljich: -57

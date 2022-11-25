@@ -23,11 +23,12 @@ regressor.fit(x_train, y_train) #Entrena el algoritmo
 
 y_pred = regressor.predict(x_test)
 
-df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()}).round().astype(object)
 
 error=[]
 
 for x, y in zip(y_test.flatten(), y_pred.flatten()):
+    y = round(y)
     error.append(abs(y-x))
 
 errorTotal = (sum(error)/(len(df)))
@@ -35,13 +36,12 @@ errorTotal = (sum(error)/(len(df)))
 accuracy=100-errorTotal
 print(f'The results have been written in the results folder/ -- The Linear regression accuracy is (NO FILTERED DATA)--> %.4f'%accuracy + ' %')
 
-f = open ('results/linear_regression_with_NO_data_filter.data','a+')
+f = open ('results/linear_regression_with_NO_data_filter_ROUND.data','a+')
 f.write(f'Linear regression accuracy is --> %.4f'%accuracy + ' %')
 f.write('\n\n')
 f.write(str(df.to_string()))
 
 f.close()
-
 
 
 # --------------------------------------------------------------------------------------------
@@ -73,11 +73,12 @@ regressor.fit(x_train, y_train) #Entrena el algoritmo
 
 y_pred = regressor.predict(x_test)
 
-df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()}).round().astype(object)
 
 error=[]
 
 for x, y in zip(y_test.flatten(), y_pred.flatten()):
+    y = round(y)
     error.append(abs(y-x))
 
 errorTotal = (sum(error)/(len(df)))
@@ -85,7 +86,7 @@ errorTotal = (sum(error)/(len(df)))
 accuracy=100-errorTotal
 print(f'The results have been written in the results folder/ -- The Linear regression accuracy is (FILTERED DATA)--> %.4f'%accuracy + ' %')
 
-f = open ('results/linear_regression_with_data_filter.data','a+')
+f = open ('results/linear_regression_with_data_filter_ROUND.data','a+')
 f.write(f'Linear regression accuracy is --> %.4f'%accuracy + ' %')
 f.write('\n\n')
 f.write(str(df.to_string()))
