@@ -1,0 +1,544 @@
+Pearson correlation coefficient is --> 0.3345
+Spearman correlation coefficient is --> 0.3848
+Kendall correlation coefficient is --> 0.3338
+
+PLAYERS RANKING (AND ITS SCORE) ACCORDING TO LOGISTIC REGRESSION: 
+Nico Williams: 14
+Muriqi: 14
+Moi Gómez: 14
+Benzema: 13
+Silva: 13
+Fede Valverde: 12
+Griezmann: 9
+Canales: 9
+Iago Aspas: 9
+Joselu: 9
+Vinícius Júnior: 9
+Albiol: 9
+Parejo: 9
+Sergi Darder: 8
+Modric: 8
+Raúl García: 6
+Jordi Alba: 6
+Jesús Navas: 6
+Leo Baptistão: 5
+De Marcos: 5
+Mikel Vesga: 5
+Ter Stegen: 5
+Borja Iglesias: 5
+Enes Ünal: 5
+David López: 5
+Aleix García: 5
+Oriol Romeu: 5
+Kang-In Lee: 5
+Ezequiel Ávila: 5
+Kroos: 5
+Tchouaméni: 5
+Rodrygo: 5
+Brais Méndez: 5
+Sergio León: 5
+Gayà: 5
+Samuel Lino: 5
+Guillamón: 5
+Rulli: 5
+Lewandowski: 4
+Dembélé: 4
+Robertone: 2
+Unai Simón: 2
+Yeray Álvarez: 2
+Iñigo Martínez: 2
+Álex Berenguer: 2
+Sancet: 2
+Muniain: 2
+Williams: 2
+Oblak: 2
+Reinildo Mandava: 2
+José Giménez: 2
+Rodrigo de Paul: 2
+Kondogbia: 2
+João Félix: 2
+Correa: 2
+Kounde: 2
+Pedri: 2
+De Jong: 2
+Gavi: 2
+Raphinha: 2
+Ansu Fati: 2
+Rui Silva: 2
+Álex Moreno: 2
+William Carvalho: 2
+Guido Rodríguez: 2
+Fekir: 2
+Jeremías Ledesma: 2
+Lucas Pérez: 2
+Aidoo: 2
+Óscar Rodríguez: 2
+Édgar Badía: 2
+Pere Milla: 2
+Brian Oliván: 2
+Leandro Cabrera: 2
+Edu Expósito: 2
+David Soria: 2
+Santiago Bueno: 2
+Stuani: 2
+Jaume Costa: 2
+Ruiz de Galarreta: 2
+David García Zub.: 2
+Unai García: 2
+Rubén García: 2
+Kike García: 2
+Dimitrievski: 2
+Catena: 2
+Lejeune: 2
+Isi Palazón: 2
+Álvaro García: 2
+Óscar Valentín: 2
+Trejo: 2
+Sergio Camello: 2
+Courtois: 2
+Éder Militão: 2
+Alaba: 2
+Carvajal: 2
+Alex Remiro: 2
+Le Normand: 2
+Mikel Merino: 2
+Zubimendi: 2
+Masip: 2
+Óscar Plano: 2
+Roque Mesa: 2
+Óliver Torres: 2
+Thierry Correia: 2
+Gabriel Paulista: 2
+Samu Castillejo: 2
+Pau Torres: 2
+Kiko Femenía: 2
+Sergio Busquets: -4
+Morata: -6
+Isco: -6
+Ferreira Carrasco: -8
+Fernando Martínez: -50
+Pacheco: -50
+Rodrigo Ely: -50
+Akieme: -50
+Babic: -50
+Álex Pozo: -50
+Kaiky: -50
+Chumi: -50
+Mendes: -50
+Juanjo Nieto: -50
+Iván Martos: -50
+Álex Centelles: -50
+Embarba: -50
+Eguaras: -50
+Melero: -50
+Samu Costa: -50
+De la Hoz: -50
+Francisco Portillo: -50
+Lázaro Vinicius: -50
+Arnau Puigmal: -50
+Gui Guedes: -50
+Svidersky: -50
+Ramazani: -50
+El Bilal Touré: -50
+Dyego Sousa: -50
+Milovanovic: -50
+Agirrezabala: -50
+Ander Iru: -50
+Lekue: -50
+Daniel Vivian: -50
+Yuri Berchiche: -50
+Aitor Paredes: -50
+Balenziaga: -50
+Capa: -50
+Dani García: -50
+Zarraga: -50
+Jon Morcillo: -50
+Ander Herrera: -50
+Unai Vencedor: -50
+Malcom Adu: -50
+Guruzeta: -50
+Villalibre: -50
+Ivo Grbic: -50
+Savic: -50
+Nahuel Molina: -50
+Mario Hermoso: -50
+Felipe: -50
+Reguilón: -50
+Witsel: -50
+Marcos Llorente: -50
+Koke: -50
+Saúl Ñíguez: -50
+Lemar: -50
+Pablo Barrios: -50
+Carlos Martín: -50
+Matheus Cunha: -50
+Iñaki Peña: -50
+Alejandro Balde: -50
+Sergi Roberto: -50
+Eric García: -50
+Marcos Alonso: -50
+Ronald Araujo: -50
+Christensen: -50
+Héctor Bellerín: -50
+Kessié: -50
+Pablo Torre: -50
+Álvaro Sanz: -50
+Ferrán Torres: -50
+Depay: -50
+Ilias Akhomach: -50
+Estanis: -50
+Claudio Bravo: -50
+Dani Martín: -50
+Édgar González: -50
+Pezzella: -50
+Sabaly: -50
+Luiz Felipe: -50
+Víctor Ruiz: -50
+Martín Montoya: -50
+Juan Miranda: -50
+Fran Delgado: -50
+Aitor Ruibal: -50
+Rodrigo Sánchez: -50
+Luiz Henrique: -50
+Guardado: -50
+Joaquín: -50
+Juan Cruz: -50
+Paul Akouokou: -50
+Camarasa: -50
+Willian José: -50
+Juanmi Jiménez: -50
+Loren Morón: -50
+David Gil: -50
+Luis Hernández: -50
+Víctor Chust: -50
+Espino: -50
+Fali: -50
+Zaldua: -50
+Iza Carcelén: -50
+Momo Mbaye: -50
+Cala: -50
+Arzamendia: -50
+Álex Fernández: -50
+Fede San Emeterio: -50
+José Mari: -50
+Rubén Alcaraz: -50
+Bongonda: -50
+Iván Alejo: -50
+Brian Ocampo: -50
+Awer Mabil: -50
+Antonio Blanco: -50
+Tomás Alarcón: -50
+Mamady Diarra: -50
+Álvaro Bastida: -50
+Jon Ander Garrido: -50
+Negredo: -50
+Sobrino: -50
+Choco Lozano: -50
+Álvaro Giménez: -50
+Iván Chapela: -50
+Marchesin: -50
+Iván Villar: -50
+Unai Núñez: -50
+Javi Galán: -50
+Hugo Mallo: -50
+Mingueza: -50
+Kevin Vázquez: -50
+Carlos Domínguez: -50
+Gabriel Veiga: -50
+Fran Beltrán: -50
+Renato Tapia: -50
+Franco Cervi: -50
+Carles Pérez: -50
+Augusto Solari: -50
+Luca de la Torre: -50
+Swedberg: -50
+Denis Suárez: -50
+Hugo Álvarez: -50
+Strand Larsen: -50
+Gonzalo Paciencia: -50
+Pablo Durán: -50
+Axel Werner: -50
+Bigas: -50
+Pol Lirola: -50
+Clerc: -50
+Enzo Roco: -50
+Helibelton Palacios: -50
+Fernández Mercau: -50
+Gonzalo Verdú: -50
+Diego González: -50
+Federico Fernández: -50
+John Donald: -50
+Gumbau: -50
+Álex Collado: -50
+Omar Mascarell: -50
+Raúl Guti: -50
+Josan: -50
+Tete Morente: -50
+Domingos Quina: -50
+Fidel: -50
+Pastore: -50
+Álex Alfaro: -50
+Ezequiel Ponce: -50
+Lucas Boyé: -50
+Roger: -50
+Lecomte: -50
+Álvaro Fernández: -50
+Joan García: -50
+Calero: -50
+Óscar Gil: -50
+Sergi Gómez: -50
+Rubén Sánchez Sáez: -50
+Omar El Hilali: -50
+Simo: -50
+Adrià Pedrosa: -50
+Lluís Recasens: -50
+Vinicius Souza: -50
+Javi Puado: -50
+Keidi Bare: -50
+Lazo: -50
+Aleix Vidal: -50
+Nico Melamed: -50
+Pol Lozano: -50
+Luca Koleosho: -50
+Gori: -50
+Villahermosa: -50
+Braithwaite: -50
+Dani Gómez: -50
+Nabil Touaizi: -50
+Diego Conde: -50
+Kiko Casilla: -50
+Domingos Duarte: -50
+Juan Iglesias: -50
+Mitrovic: -50
+Damián Suárez: -50
+Gastón Álvarez: -50
+Djené: -50
+Angileri: -50
+Amavi: -50
+Omar Alderete: -50
+Kofi: -50
+Aleñá: -50
+Maksimovic: -50
+Luis Milla: -50
+Algobia: -50
+Mauro Arambarri: -50
+Portu: -50
+Jaime Seoane: -50
+Moi Parra: -50
+Borja Mayoral: -50
+Munir El Haddadi: -50
+Latasa: -50
+Jaime Mata: -50
+Juan Carlos Martín: -50
+Gazzaniga: -50
+Toni Fuidias: -50
+Arnau Martínez: -50
+Miguel Gutiérrez: -50
+Yan Couto: -50
+Javi Hernández: -50
+Juanpe: -50
+Bernardo: -50
+Rodrigo Riquelme: -50
+Yangel Herrera: -50
+Valery: -50
+Toni Villa: -50
+Reinier: -50
+Samu Sáiz: -50
+Iván Martín: -50
+Ramón Terrats: -50
+Óscar Ureña: -50
+Joel Roca: -50
+Borja García: -50
+Ibrahima Kébé: -50
+Valentín Castellanos: -50
+Manu Vallejo: -50
+Rajkovic: -50
+Greif: -50
+Leo Román: -50
+Raíllo: -50
+Copete: -50
+Martin Valjent: -50
+Maffeo: -50
+Giovanni González: -50
+Nastasic: -50
+Braian Cufré: -50
+Franco Russo: -50
+Josep Gayá: -50
+Dani Rodríguez: -50
+Grenier: -50
+Idrissu Baba: -50
+Antonio Sánchez: -50
+Amath Ndiaye: -50
+Rodrigo Battaglia: -50
+Lago Júnior: -50
+Javi Llabres: -50
+Abdón Prats: -50
+Ángel Rodríguez: -50
+Kadewere: -50
+Sergio Herrera: -50
+Aitor Fernández: -50
+Juan Pérez: -50
+Manu Sánchez: -50
+Nacho Vidal: -50
+Rubén Peña: -50
+Aridane Hernández: -50
+Unai Dufur: -50
+Brasanac: -50
+Aimar Oroz: -50
+Lucas Torró: -50
+Jon Moncayola: -50
+Abde Ezzalzouli: -50
+Kike Barja: -50
+Pablo Ibáñez: -50
+Roberto Torres: -50
+Iker Benito: -50
+Budimir: -50
+Barbero: -50
+Miguel Morro: -50
+Diego López: -50
+Fran García: -50
+Balliu: -50
+Pep Chavarría: -50
+Abdul Mumin: -50
+Mario Suárez: -50
+Mario Hernández: -50
+Saveljich: -50
+Pathé Ciss: -50
+Unai López: -50
+Comesaña: -50
+Salvi: -50
+Pozo: -50
+Randy Nteka: -50
+Bebé: -50
+Pablo Muñoz: -50
+Álvaro Aguirre: -50
+Falcao: -50
+Raúl de Tomás: -50
+Andrés Martín: -50
+Lunin: -50
+Lucas Vázquez: -50
+Rüdiger: -50
+Ferland Mendy: -50
+Nacho Fernández: -50
+Odriozola: -50
+Jesús Vallejo: -50
+Camavinga: -50
+Dani Ceballos: -50
+Asensio: -50
+Mariano Díaz: -50
+Eden Hazard: -50
+Peter González: -50
+Andoni Zubiaurre: -50
+Zubeldia: -50
+Gorosabel: -50
+Diego Rico: -50
+Jon Pacheco: -50
+Aritz Elustondo: -50
+Álex Sola: -50
+Aihen Muñoz: -50
+Kubo: -50
+Illarramendi: -50
+Robert Navarro: -50
+Guevara: -50
+Beñat Turrientes: -50
+Pablo Marín: -50
+Ander Barrenetxea: -50
+Jon Magunazelaia: -50
+Merquelanz: -50
+Ander Martín: -50
+Sorloth: -50
+Ali Cho: -50
+Umar Sadiq: -50
+Carlos Fernández: -50
+Karrikaburu: -50
+Oyarzabal: -50
+Sergio Asenjo: -50
+Joaquín Fernández: -50
+Javi Sánchez: -50
+Sergio Escudero: -50
+Lucas Olaza: -50
+Jawad El Yamiq: -50
+Iván Fresneda: -50
+Zouhair Feddal: -50
+Lucas Rosa: -50
+Luis Pérez: -50
+Monchu: -50
+Álvaro Aguado: -50
+Kike Pérez: -50
+Iván Sánchez: -50
+Gonzalo Plata: -50
+Anuar: -50
+Mickael Malsa: -50
+Kenedy: -50
+Shon Weissman: -50
+Sergi Guardiola: -50
+Narvaez: -50
+Roberto Arroyo: -50
+Bono: -50
+Dmitrovic: -50
+Álex Telles: -50
+José Ángel Carmona: -50
+Marcos Acuña: -50
+Rekik: -50
+Nianzou: -50
+Marcão: -50
+Gonzalo Montiel: -50
+Kike Salas: -50
+Gudelj: -50
+Papu Gómez: -50
+Joan Jordan: -50
+Fernando Reges: -50
+Rakitic: -50
+Delaney: -50
+Pedro Ortiz: -50
+Erik Lamela: -50
+Rafa Mir: -50
+En-Nesyri: -50
+Dolberg: -50
+Suso: -50
+Januzaj: -50
+Jesús Corona: -50
+Mamardashvili: -50
+Jaume Doménech: -50
+Herrerín: -50
+Diakhaby: -50
+Cömert: -50
+Lato: -50
+Foulquier: -50
+Özkacar: -50
+Jesús Vázquez: -50
+Cristhian Mosquera: -50
+Rubén Iranzo: -50
+André Almeida: -50
+Kluivert: -50
+Yunus Musah: -50
+Nico González: -50
+Ilaix Moriba: -50
+Fran Pérez: -50
+Jesús Santiago: -50
+Cavani: -50
+Marcos André: -50
+Hugo Duro: -50
+Diego López Noguerol: -50
+Pepe Reina: -50
+Alfonso Pedraza: -50
+Aïssa Mandi: -50
+Johan Mojica: -50
+Alberto Moreno: -50
+Juan Foyth: -50
+Jorge Cuenca: -50
+Álex Baena: -50
+Yéremi Pino: -50
+Capoue: -50
+Coquelin: -50
+Samu Chukwueze: -50
+Lo Celso: -50
+Trigueros: -50
+Morlanes: -50
+Alberto del Moral: -50
+Carlo Adriano: -50
+Nicolas Jackson: -50
+Morales: -50
+Danjuma: -50
+Gerard Moreno: -50
+Fernando Niño: -50

@@ -18,15 +18,21 @@ y_train = all_data['J_minus1'].values
 x_test = all_data[['Id', 'Position', 'Ranking_position', 'Matches_played', 'Matches_played_percentage', 'Usually_starting', 'Goals_OR_saved_penalties', 'Penalty_goals_OR_clean_sheets', 'Assists', 'Yellow_cards', 'Red_cards', 'Points', 'Average_points', 'Current_price', 'Max_price', 'Min_price', 'Average_points_last_5_games', 'J_minus3', 'J_minus2', 'J_minus1']].values
 y_test = all_data['J_actual'].values
 
-# regressor = LogisticRegression(penalty='none', dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, 
-#             random_state=None, solver='newton-cg', max_iter=100, multi_class='auto', verbose=0, warm_start=False, n_jobs=None, l1_ratio=None) 
-# Pearson correlation coefficient is --> 0.2287
-# Spearman correlation coefficient is --> 0.2808
-# Kendall correlation coefficient is --> 0.2423
+# regressor = LogisticRegression(penalty='l2', solver='newton-cg', max_iter=99999, multi_class='auto') 
+from sklearn.ensemble import RandomForestRegressor
+regressor = RandomForestRegressor(max_depth=5, random_state=0)
+# regressor = RandomForestRegressor(n_estimators=20,
+#                              max_depth=10,
+#                              criterion='mse',
+#                             )
+
+# from sklearn.tree import DecisionTreeRegressor
+# regressor = DecisionTreeRegressor(random_state=0)
+
+# from sklearn.gaussian_process import GaussianProcessRegressor
+# regressor = GaussianProcessRegressor()
 
 
-regressor = LogisticRegression(penalty='l2', solver='newton-cg', max_iter=99999, multi_class='auto') 
-            
 regressor.fit(x_train, y_train) #Entrena el algoritmo
 
 y_pred = regressor.predict(x_test)
@@ -38,6 +44,11 @@ pearson = stats.pearsonr(y_pred, y_test)
 spearmanr = stats.spearmanr(y_pred, y_test)
 
 kendalltau = stats.kendalltau(y_pred, y_test)
+
+print(f'Pearson correlation coefficient is --> %.4f'%pearson[0])
+print(f'Spearman correlation coefficient is --> %.4f'%spearmanr[0])
+print(f'Kendall correlation coefficient is --> %.4f'%kendalltau[0])
+
 
 score_predictions = pd.DataFrame({'score':y_pred.flatten()}).to_numpy()
 players_name = all_data['Name'].to_numpy()
@@ -53,9 +64,9 @@ for i in range(1, len(df)):
 sorted_dict = sorted(player_name_and_it_predicted_score_dict.items(), key=lambda x:x[1], reverse=True)
 sorted_player_name_and_it_predicted_score_dict = {k: v for k, v in sorted_dict}
 
-print('\n'.join("{}: {}".format(k, v) for k, v in sorted_player_name_and_it_predicted_score_dict.items()))
+# print('\n'.join("{}: {}".format(k, v) for k, v in sorted_player_name_and_it_predicted_score_dict.items()))
 
-# f = open ('results/correlations_and_ranking_logistic_regression_OPTMIZED_PARAMS.data','a+')
+# f = open ('results/correlations_and_ranking_random_forest_regression.data','a+')
 # f.write(f'Pearson correlation coefficient is --> %.4f'%pearson[0])
 # f.write('\n')
 # f.write(f'Spearman correlation coefficient is --> %.4f'%spearmanr[0])
@@ -63,7 +74,7 @@ print('\n'.join("{}: {}".format(k, v) for k, v in sorted_player_name_and_it_pred
 # f.write(f'Kendall correlation coefficient is --> %.4f'%kendalltau[0])
 
 # f.write('\n\n')
-# f.write(f'PLAYERS RANKING (AND ITS SCORE) ACCORDING TO LOGISTIC REGRESSION: ')
+# f.write(f'PLAYERS RANKING (AND ITS SCORE) ACCORDING TO RANDOM FOREST REGRESSION: ')
 # f.write('\n')
 # f.write('\n'.join("{}: {}".format(k, v) for k, v in sorted_player_name_and_it_predicted_score_dict.items()))
 # f.close()
