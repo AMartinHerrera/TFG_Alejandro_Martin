@@ -1,4 +1,4 @@
-Id,Name,Position,Ranking_position,Matches_played,Matches_played_percentage,Usually_starting,Goals_OR_saved_penalties,Penalty_goals_OR_clean_sheets,Assists,Yellow_cards,Red_cards,Points,Average_points,Current_price,Max_price,Min_price,Average_points_last_5_games,J_minus4,J_minus3,J_minus2,J_minus1,J_actual
+Player_id,Name,Position,Ranking_position,Matches_played,Matches_played_percentage,Usually_starting,Goals_OR_saved_penalties,Penalty_goals_OR_clean_sheets,Assists,Yellow_cards,Red_cards,Points,Average_points,Current_price,Max_price,Min_price,Average_points_last_5_games,J_minus4,J_minus3,J_minus2,J_minus1,J_actual
 3259,Fernando Martínez,0,6,13,92.86,1,1,1,0,1,0,67,5.2,2690000,3720000,1000000,5.6,8,-50,2,11,7
 1983,Pacheco,0,29,1,7.14,0,0,0,0,0,0,4,4,1180000,3130000,1180000,0.8,-50,4,-50,-50,-50
 2365,Rodrigo Ely,1,31,14,100.00,0,0,0,0,2,0,50,3.6,2130000,3170000,720000,2.6,3,3,4,3,0
