@@ -26,3 +26,7 @@ class Player (models.Model):
     J_minus2 = models.IntegerField(_("J_minus2"))
     J_minus1 = models.IntegerField(_("J_minus1"))
     J_actual = models.IntegerField(_("J_actual"))
+
+    def __str__(self):
+        return f'{self.Name}'
+        # return f'{self.Player_id}, {self.Name}, {self.Position}'

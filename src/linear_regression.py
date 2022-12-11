@@ -1,6 +1,8 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from statistics import mean, stdev
+from sklearn.metrics import mean_squared_error
+
 
 
 input_file = "data/players_data_November_18_OK.csv"
@@ -36,12 +38,17 @@ errorTotal = (sum(error)/(len(df)))
 accuracy=100-errorTotal
 print(f'The results have been written in the results folder/ -- The Linear regression accuracy is (NO FILTERED DATA)--> %.4f'%accuracy + ' %')
 
-f = open ('results/linear_regression_with_NO_data_filter_ROUND.data','a+')
-f.write(f'Linear regression accuracy is --> %.4f'%accuracy + ' %')
-f.write('\n\n')
-f.write(str(df.to_string()))
+mse = mean_squared_error(y_true = y_test, y_pred = y_pred)
 
-f.close()
+print('ERRRORRRR-->')
+print(mse)
+
+# f = open ('results/linear_regression_with_NO_data_filter_ROUND.data','a+')
+# f.write(f'Linear regression accuracy is --> %.4f'%accuracy + ' %')
+# f.write('\n\n')
+# f.write(str(df.to_string()))
+
+# f.close()
 
 
 # --------------------------------------------------------------------------------------------
@@ -86,9 +93,9 @@ errorTotal = (sum(error)/(len(df)))
 accuracy=100-errorTotal
 print(f'The results have been written in the results folder/ -- The Linear regression accuracy is (FILTERED DATA)--> %.4f'%accuracy + ' %')
 
-f = open ('results/linear_regression_with_data_filter_ROUND.data','a+')
-f.write(f'Linear regression accuracy is --> %.4f'%accuracy + ' %')
-f.write('\n\n')
-f.write(str(df.to_string()))
+# f = open ('results/linear_regression_with_data_filter_ROUND.data','a+')
+# f.write(f'Linear regression accuracy is --> %.4f'%accuracy + ' %')
+# f.write('\n\n')
+# f.write(str(df.to_string()))
 
-f.close()
+# f.close()

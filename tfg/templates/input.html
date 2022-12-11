@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <div class="container">
+            <div class="create-formu">
+                <h3>Insert players:</h3>
+                <form action="{% url 'output' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="input" style="height:25px;">
+                        {{form}}
+                    </div>
+                    <input type="submit" value="Submit" style="height:25px; width: 75px;">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
+{% endblock %}

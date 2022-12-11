@@ -1,0 +1,22 @@
+{% extends "home.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <div class="container">
+            {% if error_case %}
+            {{ error_case }}
+            {% endif %}
+
+            <div>
+                <h3>Result:</h3>
+                <div>
+                    {{ result }}
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+{% endblock %}
