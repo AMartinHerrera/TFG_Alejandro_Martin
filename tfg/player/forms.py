@@ -5,4 +5,4 @@ from .models import Player
 
 class PlayerInputForm(forms.Form):
 
-    player = forms.CharField()
+    player = forms.CharField(label='Player(s)', max_length=1000)

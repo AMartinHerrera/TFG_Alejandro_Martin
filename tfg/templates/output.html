@@ -3,20 +3,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <div class="container">
-            {% if error_case %}
-            {{ error_case }}
-            {% endif %}
 
-            <div>
-                <h3>Result:</h3>
-                <div>
-                    {{ result }}
-                </div>
-            </div>
+<body>
+    <div class="container">
+        <h3 class="text-center">Players: score prediction:</h3><br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Player name</th>
+                    <th>Score predicted</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if dict %}
+                {% for k, v in dict.items %}
+                <tr>
+                    <td>{{k}}</td>
+                    <td>{{v}}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
+        <div class="create-formu">
+            <form action="{% url 'home' %}" method="POST">
+                {% csrf_token %}
+                <input type="submit" value="Finish" style="height:25px; width: 75px;">
+            </form>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
 {% endblock %}
